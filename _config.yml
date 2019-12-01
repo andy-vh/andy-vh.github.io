@@ -113,9 +113,6 @@ author:
   location         : "Philadelphia, PA"
   email            : "andyvuhoang.data@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: mailto:andyvuhoang.data@gmail.com
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/andyvuhoang"
