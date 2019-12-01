@@ -4,6 +4,7 @@ title: "About"
 permalink: /about/
 header:
   image: "/images/zakim.jpg"
+author_profile: true
 ---
 
 Early-career data scientist.
