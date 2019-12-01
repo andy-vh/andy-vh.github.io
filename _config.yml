@@ -111,7 +111,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Early career data scientiist. I think Bayesian stuff is neat."
   location         : "Philadelphia, PA"
-  email            : "andyvuhoang.data@gmail.com
+  email            : "andyvuhoang.data@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
