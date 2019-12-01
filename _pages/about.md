@@ -2,8 +2,6 @@
 layout: posts
 title: "About"
 permalink: /about/
-header:
-  image: "/images/zakim.jpg"
 author_profile: true
 ---
 
