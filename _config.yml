@@ -108,8 +108,8 @@ analytics:
 # Site Author
 author:
   name             : "Andy Vu Hoang"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Early career data scientiist. I think Bayesian stuff is neat."
+  avatar           : "assets/images/ebichu.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "I work with data. I think Bayesian stuff is neat."
   location         : "Philadelphia, PA"
   email            : "andyvuhoang.data@gmail.com"
   links:
