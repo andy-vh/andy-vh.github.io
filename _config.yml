@@ -109,7 +109,7 @@ analytics:
 author:
   name             : "Andy Vu Hoang"
   avatar           : "assets/images/ebichu.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I work with data. I think Bayesian stuff is neat."
+  bio              : "I work with data and I think Bayesian stuff is neat."
   location         : "Philadelphia, PA"
   email            : "andyvuhoang.data@gmail.com"
   links:
