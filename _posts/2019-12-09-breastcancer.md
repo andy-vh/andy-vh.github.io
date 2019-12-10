@@ -1,6 +1,6 @@
 ---
 title: "Pymc3 Logistic Regresion - Breast Cancer"
-date: 2019-12-08
+date: 2019-12-09
 tags: [pymc3, classification]
 categories: ds
 
