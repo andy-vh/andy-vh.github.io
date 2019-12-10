@@ -1,4 +1,4 @@
----
+﻿---
 title: "Pymc3 Logistic Regresion - Breast Cancer"
 date: 2019-12-08
 tags: [pymc3, classification]
@@ -118,7 +118,7 @@ _ = sns.countplot(x='classification', data=raw_df)
 ```
 
 
-![png](../assets/breastcancer_files/breastcancer_7_0.png)
+![png](../../assets/breastcancer_files/breastcancer_7_0.png)
 
 
 
@@ -128,39 +128,39 @@ for col in raw_df.columns.drop('classification'):
 ```
 
 
-![png](../assets/breastcancer_files/breastcancer_8_0.png)
+![png](../../assets/breastcancer_files/breastcancer_8_0.png)
 
 
 
-![png](../assets/breastcancer_files/breastcancer_8_1.png)
+![png](../../assets/breastcancer_files/breastcancer_8_1.png)
 
 
 
-![png](../assets/breastcancer_files/breastcancer_8_2.png)
+![png](../../assets/breastcancer_files/breastcancer_8_2.png)
 
 
 
-![png](../assets/breastcancer_files/breastcancer_8_3.png)
+![png](../../assets/breastcancer_files/breastcancer_8_3.png)
 
 
 
-![png](../assets/breastcancer_files/breastcancer_8_4.png)
+![png](../../assets/breastcancer_files/breastcancer_8_4.png)
 
 
 
-![png](../assets/breastcancer_files/breastcancer_8_5.png)
+![png](../../assets/breastcancer_files/breastcancer_8_5.png)
 
 
 
-![png](../assets/breastcancer_files/breastcancer_8_6.png)
+![png](../../assets/breastcancer_files/breastcancer_8_6.png)
 
 
 
-![png](../assets/breastcancer_files/breastcancer_8_7.png)
+![png](../../assets/breastcancer_files/breastcancer_8_7.png)
 
 
 
-![png](../assets/breastcancer_files/breastcancer_8_8.png)
+![png](../../assets/breastcancer_files/breastcancer_8_8.png)
 
 
 From visual inspection, glucose seems to be the most different variable between the patients and the control group.
@@ -281,7 +281,7 @@ plot_traces(pooled_trace)
     
 
 
-![png](../assets/breastcancer_files/breastcancer_15_1.png)
+![png](../../assets/breastcancer_files/breastcancer_15_1.png)
 
 
 
@@ -608,7 +608,7 @@ _ = pm.traceplot(hierarchical_trace_0)
 ```
 
 
-![png](../assets/breastcancer_files/breastcancer_29_0.png)
+![png](../../assets/breastcancer_files/breastcancer_29_0.png)
 
 
 
@@ -810,7 +810,7 @@ _ = pm.traceplot(hierarchical_trace_1, var_names=['alpha', 'mu_beta', 'sigma_bet
 ```
 
 
-![png](../assets/breastcancer_files/breastcancer_36_0.png)
+![png](../../assets/breastcancer_files/breastcancer_36_0.png)
 
 
 The traceplots look a lot better now, and there's less divergences popping up from Pymc3!
@@ -1009,7 +1009,7 @@ pm.model_to_graphviz(pooled_model)
 
 
 
-![svg](../assets/breastcancer_files/breastcancer_50_0.svg)
+![svg](../../assets/breastcancer_files/breastcancer_50_0.svg)
 
 
 
@@ -1021,7 +1021,7 @@ pm.model_to_graphviz(hierarchical_model_1)
 
 
 
-![svg](../assets/breastcancer_files/breastcancer_51_0.svg)
+![svg](../../assets/breastcancer_files/breastcancer_51_0.svg)
 
 
 
@@ -1033,7 +1033,7 @@ pm.model_to_graphviz(multivar_model)
 
 
 
-![svg](../assets/breastcancer_files/breastcancer_52_0.svg)
+![svg](../../assets/breastcancer_files/breastcancer_52_0.svg)
 
 
 
@@ -1089,7 +1089,7 @@ plt.show()
 ```
 
 
-![png](../assets/breastcancer_files/breastcancer_57_0.png)
+![png](../../assets/breastcancer_files/breastcancer_57_0.png)
 
 
 
@@ -1108,7 +1108,7 @@ plt.show()
 ```
 
 
-![png](../assets/breastcancer_files/breastcancer_58_0.png)
+![png](../../assets/breastcancer_files/breastcancer_58_0.png)
 
 
 
@@ -1127,7 +1127,7 @@ plt.show()
 ```
 
 
-![png](../assets/breastcancer_files/breastcancer_59_0.png)
+![png](../../assets/breastcancer_files/breastcancer_59_0.png)
 
 
 Again, the AUC of all 3 models is very similar, with the multivariate model having a slight advantage. However, the initial univariate model has the lowest AUC, and I also feel that it doesn't capture enough of the available information (e.g. interactions between age and glucose on cancer risk). To pick between the last two models, I evaluate them on the test set.
@@ -1195,7 +1195,7 @@ plt.show()
 ```
 
 
-![png](../assets/breastcancer_files/breastcancer_67_0.png)
+![png](../../assets/breastcancer_files/breastcancer_67_0.png)
 
 
 
@@ -1214,7 +1214,7 @@ plt.show()
 ```
 
 
-![png](../assets/breastcancer_files/breastcancer_68_0.png)
+![png](../../assets/breastcancer_files/breastcancer_68_0.png)
 
 
 This final result shows that — despite a more intuitive explanation — the hierarchical model does not perform as well as the pooled multivariate model using more variable. This doesn't say that hierarchical models are definitively worse however, as the variables used differ between the two models (glucose, age, bmi vs. glucose, resistin, age, and bmi).  
