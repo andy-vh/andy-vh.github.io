@@ -9,7 +9,7 @@ usemathjax: "true"
 ---
 
 # Overview
-A quick practice on using Facebook's prophet library for forecasting time series data.
+* A quick practice on using Facebook's prophet library for forecasting time series data.
 
 ```
 from fbprophet import Prophet
