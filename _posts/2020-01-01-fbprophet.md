@@ -8,10 +8,8 @@ excerpt: "Analyzing suicide-related wiki page views"
 usemathjax: "true"
 ---
 
-# Day 1 - Time series forecasting with fbprophet
-
+# Overview
 A quick practice on using Facebook's prophet library for forecasting time series data.
-
 
 ```
 from fbprophet import Prophet
