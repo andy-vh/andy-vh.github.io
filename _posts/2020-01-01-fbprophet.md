@@ -1,3 +1,12 @@
+---
+title: "Day 1 - Forecasting with Fbprophet"
+date: 2020-01-01
+tags: [fbprophet, time-series]
+categories: ds
+
+excerpt: "Analyzing suicide-related wiki page views"
+usemathjax: "true"
+---
 
 # Day 1 - Time series forecasting with fbprophet
 
@@ -101,23 +110,23 @@ _ = df[(df.date>='2016-01-01') & (df.date<='2016-12-31')].pivot_table(index='dat
 ```
 
 
-![png](day1_prophet_files/day1_prophet_4_0.png)
+![png](../../assets/fbprophet_files/day1_prophet_4_0.png)
 
 
 
-![png](day1_prophet_files/day1_prophet_4_1.png)
+![png](../../assets/fbprophet_files/day1_prophet_4_1.png)
 
 
 
-![png](day1_prophet_files/day1_prophet_4_2.png)
+![png](../../assets/fbprophet_files/day1_prophet_4_2.png)
 
 
 
-![png](day1_prophet_files/day1_prophet_4_3.png)
+![png](../../assets/fbprophet_files/day1_prophet_4_3.png)
 
 
 
-![png](day1_prophet_files/day1_prophet_4_4.png)
+![png](../../assets/fbprophet_files/day1_prophet_4_4.png)
 
 
 Not directly related to any analysis I'll be doing in this post, but it's interesting that the page on "suicide methods" started becoming more popular than "suicide" in 2018.
@@ -159,7 +168,7 @@ _ = m_1.plot(fc_1)
 ```
 
 
-![png](day1_prophet_files/day1_prophet_10_0.png)
+![png](../../assets/fbprophet_files/day1_prophet_10_0.png)
 
 
 
@@ -168,7 +177,7 @@ _ = m_1.plot_components(fc_1)
 ```
 
 
-![png](day1_prophet_files/day1_prophet_11_0.png)
+![png](../../assets/fbprophet_files/day1_prophet_11_0.png)
 
 
 The model seems to expect an increase in views for the "suicide" article for the next year. Another interesting thing of note is that Saturdays tend to have less views, which reminds me of [Crisistrends showing less texters experiencing anxiety/stress on Fridays and Saturdays.](https://crisistrends.org/) These trends could be because people are less stressed out on weekends.
@@ -188,11 +197,11 @@ _ = m_2.plot_components(fc_2)
     
 
 
-![png](day1_prophet_files/day1_prophet_13_1.png)
+![png](../../assets/fbprophet_files/day1_prophet_13_1.png)
 
 
 
-![png](day1_prophet_files/day1_prophet_13_2.png)
+![png](../../assets/fbprophet_files/day1_prophet_13_2.png)
 
 
 # Summary and Findings
