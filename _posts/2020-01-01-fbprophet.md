@@ -1,5 +1,5 @@
 ---
-title: "Day 1 - Forecasting with Fbprophet"
+title: "Forecasting with Fbprophet"
 date: 2020-01-01
 tags: [fbprophet, time-series]
 categories: ds
