@@ -1,3 +1,13 @@
+---
+title: "NoMoney - Introduction"
+date: 2020-03-01
+tags: [nomoney]
+categories: ds
+
+excerpt: "How I learned to not make money"
+usemathjax: "true"
+---
+
 # 3money0kids
 
 Interested in making some money? Heard about those interesting things called "machine learning" or "cryptocurrency" recently? Trying to make use of your knowledge of math or programming to fatten up your wallet? Me too.  

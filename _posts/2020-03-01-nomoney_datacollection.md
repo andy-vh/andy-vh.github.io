@@ -1,7 +1,7 @@
 ---
 title: "NoMoney - Gathering Data"
 date: 2020-03-01
-tags: [data-collection]
+tags: [data-collection, nomoney]
 categories: ds
 
 excerpt: "Gathering data for informing cryptocurrency trading"
