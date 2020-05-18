@@ -1,6 +1,6 @@
 ---
 title: "NoMoney - Gathering Data"
-date: 2020-03-01
+date: 2020-05-17
 tags: [data-collection, nomoney]
 categories: ds
 
@@ -8,7 +8,7 @@ excerpt: "Gathering data for informing cryptocurrency trading"
 usemathjax: "true"
 ---
 
-# Collecting Data
+# Overview
 When I first started looking into how I'd like to use machine learning for trading, I thought about what data was out there for me to look at that could *potentially* help me with informed trading. It's possible that data I collect could be informative or uninformative, but I needed to collect the data first and perform some analysis before I could arrive at any conclusion. There were three sources of data that I wanted to take a look at when I started:  
 1. Traditional price data (open, close, volume, etc.)
 2. Wikipedia pageviews
@@ -112,52 +112,52 @@ crypto_prices.head()
     <tr>
       <th>0</th>
       <td>BTC/USDT</td>
-      <td>2018-10-26</td>
-      <td>6538.63</td>
-      <td>6558.35</td>
-      <td>6463.04</td>
-      <td>6505.60</td>
-      <td>7776.907864</td>
+      <td>2018-12-21</td>
+      <td>3840.25</td>
+      <td>3979.00</td>
+      <td>3785.00</td>
+      <td>3948.91</td>
+      <td>42822.350872</td>
     </tr>
     <tr>
       <th>1</th>
       <td>BTC/USDT</td>
-      <td>2018-10-27</td>
-      <td>6505.60</td>
-      <td>6514.17</td>
-      <td>6453.00</td>
-      <td>6489.93</td>
-      <td>5743.933728</td>
+      <td>2018-12-22</td>
+      <td>3948.91</td>
+      <td>4021.53</td>
+      <td>3870.00</td>
+      <td>3929.71</td>
+      <td>40117.531529</td>
     </tr>
     <tr>
       <th>2</th>
       <td>BTC/USDT</td>
-      <td>2018-10-28</td>
-      <td>6489.93</td>
-      <td>6505.01</td>
-      <td>6315.00</td>
-      <td>6344.50</td>
-      <td>13827.224067</td>
+      <td>2018-12-23</td>
+      <td>3929.71</td>
+      <td>4198.00</td>
+      <td>3924.83</td>
+      <td>4008.01</td>
+      <td>64647.809129</td>
     </tr>
     <tr>
       <th>3</th>
       <td>BTC/USDT</td>
-      <td>2018-10-29</td>
-      <td>6344.50</td>
-      <td>6395.00</td>
-      <td>6317.01</td>
-      <td>6330.87</td>
-      <td>8877.175385</td>
+      <td>2018-12-24</td>
+      <td>4010.11</td>
+      <td>4020.00</td>
+      <td>3646.41</td>
+      <td>3745.79</td>
+      <td>62725.629432</td>
     </tr>
     <tr>
       <th>4</th>
       <td>BTC/USDT</td>
-      <td>2018-10-30</td>
-      <td>6330.01</td>
-      <td>6428.00</td>
-      <td>6245.02</td>
-      <td>6371.93</td>
-      <td>12148.888216</td>
+      <td>2018-12-25</td>
+      <td>3745.56</td>
+      <td>3837.15</td>
+      <td>3656.74</td>
+      <td>3777.74</td>
+      <td>42629.375817</td>
     </tr>
   </tbody>
 </table>
@@ -171,7 +171,7 @@ crypto_prices.to_csv('../data/crypto_prices.csv')
 ```
 
 # Wikipedia Pageviews
-Another variable that interested me is seeing how many people are looking up topics such as cryptocurrency, Bitcoin, etc. on Wikipedia. The Wikimedia provides the mwviews library to collect this information. My intuition tells me that higher page views would correlate with higher interest in a certain cryptocurrency, but it could also be because they were mentioned a lot in the news recently (whether good or bad). 
+Another variable that interested me is seeing how many people are looking up topics such as cryptocurrency, Bitcoin, etc. on Wikipedia. The Wikimedia Foundation provides the mwviews library to collect this information. My intuition tells me that higher page views could correlate with higher interest in a certain cryptocurrency, which could make it an indicator for price movements.
 
 
 ```python
@@ -238,43 +238,43 @@ wiki_views.head()
   <tbody>
     <tr>
       <th>0</th>
-      <td>2018-10-26</td>
-      <td>9548</td>
-      <td>952</td>
-      <td>1788</td>
-      <td>5563</td>
+      <td>2018-12-21</td>
+      <td>12817</td>
+      <td>863</td>
+      <td>1445</td>
+      <td>3482</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>2018-10-27</td>
-      <td>9565</td>
-      <td>717</td>
-      <td>1543</td>
-      <td>3802</td>
+      <td>2018-12-22</td>
+      <td>10507</td>
+      <td>691</td>
+      <td>1216</td>
+      <td>3627</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>2018-10-28</td>
-      <td>8465</td>
-      <td>802</td>
-      <td>1842</td>
-      <td>4097</td>
+      <td>2018-12-23</td>
+      <td>9330</td>
+      <td>792</td>
+      <td>1301</td>
+      <td>3158</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>2018-10-29</td>
-      <td>11526</td>
-      <td>973</td>
-      <td>2391</td>
-      <td>5107</td>
+      <td>2018-12-24</td>
+      <td>9452</td>
+      <td>854</td>
+      <td>1299</td>
+      <td>3398</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>2018-10-30</td>
-      <td>12133</td>
-      <td>1473</td>
-      <td>2269</td>
-      <td>5018</td>
+      <td>2018-12-25</td>
+      <td>9181</td>
+      <td>824</td>
+      <td>1134</td>
+      <td>3117</td>
     </tr>
   </tbody>
 </table>
@@ -339,7 +339,82 @@ for sub in subreddits:
     dfs.append(df)
         
 reddit_submissions = pd.concat(dfs).reset_index(drop=True)
+reddit_submissions.created_utc = pd.to_datetime(reddit_submissions.created_utc, unit='s').dt.strftime('%Y-%m-%d')
 ```
+
+
+```python
+reddit_submissions.head()
+```
+
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>subreddit</th>
+      <th>title</th>
+      <th>score</th>
+      <th>created_utc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>bitcoin</td>
+      <td>It's official! 1 Bitcoin = $10,000 USD</td>
+      <td>48506</td>
+      <td>2017-11-29</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>bitcoin</td>
+      <td>The last 3 months in 47 seconds.</td>
+      <td>48471</td>
+      <td>2018-02-04</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>bitcoin</td>
+      <td>It's over 9000!!!</td>
+      <td>42435</td>
+      <td>2017-11-26</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>bitcoin</td>
+      <td>Everyone who's trading BTC right now</td>
+      <td>42042</td>
+      <td>2018-01-06</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>bitcoin</td>
+      <td>Quick, upvote this to confuse everyone into th...</td>
+      <td>36853</td>
+      <td>2019-07-24</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
 
 
 ```python
