@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Andy Vu Hoang"
-  avatar           : "assets/images/ebichu.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "assets/images/photo.jfif" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "\"Statistics is to math as cooking is to chemistry.\" -Richard McElreath, Statistical Rethinking"
   location         : "Los Angeles, CA"
   email            : "andyvuhoang.data@gmail.com"
